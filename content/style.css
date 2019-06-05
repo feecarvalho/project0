@@ -56,6 +56,17 @@ html, body {
   margin: auto;
 }
 
+.content h1 {
+  font-size: 350%;
+}
+
+.content p {
+  font-size: 150%;
+  margin: 50px 0;
+  text-shadow: 2px 2px #000;
+  font-weight: bold;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -78,29 +89,34 @@ spam {
 .div-sec {
   color: white;
   text-align: right;
-  max-width: 350px;
-  padding: 35px;
   margin: auto;
+  padding: 0 40px;
 }
 
-.div-sec .main-btn {
+.div-sec .main-btn, .div-sec .sec-btn {
+  text-shadow: 3px 3px #000;
+  box-shadow: 3px 3px #000;
+  text-transform: uppercase;
   border-radius: 7px;
-  background-color: black;
   color: #f9f3f4;
   text-decoration: none;
   font-family: 'Centaury Ghotic', sans-serif;
   border: 4px solid;
-  font-size: 300%;
-  padding: 7px 13px;
-  font-weight: 800;
-}
-
-.div-sec .sec-btn {
-  border-radius: 9px;
-  color: #f9f3f4;
-  text-decoration: none;
-  border: 3px solid;
+  font-size: 150%;
   padding: 7px 13px;
   font-weight: 700;
-  text-transform: uppercase;
+  float: right;
+  clear: both;
+}
+
+.div-sec .main-btn {
+  font-size: 300%;
+}
+
+.section2 {
+  float: right;
+  width: 30%;
+  font-size: 125%;
+  clear:both;
+  padding: 25px 0 12% 0;
 }
