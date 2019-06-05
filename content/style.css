@@ -1,21 +1,59 @@
-html {
-  box-sizing: border-box;
-  font-size: 16px;
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   font-family: 'Montserrat', sans-serif;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+#b1 {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: url(bg.jpg) no-repeat 50% 50%;
+  top: 0;
+  display: table;
+  background-size: cover;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
+#s1 {
+  background: url(career-bg.jpg) no-repeat 50% 50%;
+}
+#s2 {
+  background: url(hobbie-bg.jpg) no-repeat 50% 50%;
+}
+#s3 {
+  background: url(social-bg.jpg) no-repeat 50% 50%;
 }
 
-ol, ul {
-  list-style: none;
+#s1, #s2, #s3 {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  top: 0;
+  display: table;
+  background-size: cover;
+}
+
+#b1 .in1 {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+#s1 .div-sec , #s2 .div-sec , #s3 .div-sec {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+.content {
+  color: white;
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
 }
 
 img {
@@ -37,8 +75,32 @@ spam {
   font-size: 24px;
 }
 
-nav a:hover {
+.div-sec {
+  color: white;
+  text-align: right;
+  max-width: 350px;
+  padding: 35px;
+  margin: auto;
+}
+
+.div-sec .main-btn {
+  border-radius: 7px;
+  background-color: black;
+  color: #f9f3f4;
+  text-decoration: none;
+  font-family: 'Centaury Ghotic', sans-serif;
+  border: 4px solid;
+  font-size: 300%;
+  padding: 7px 13px;
   font-weight: 800;
-  font-size: 200%;
+}
+
+.div-sec .sec-btn {
+  border-radius: 9px;
+  color: #f9f3f4;
+  text-decoration: none;
+  border: 3px solid;
+  padding: 7px 13px;
+  font-weight: 700;
   text-transform: uppercase;
 }
