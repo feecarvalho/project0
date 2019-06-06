@@ -138,3 +138,39 @@ spam {
   clear:both;
   padding: 25px 0 12% 0;
 }
+
+.career-page {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.career-page .sml-content {
+  width: 25%;
+  height: 100%;
+  margin: auto;
+  top: 0;
+  background: url(career-page-bg.jpg) no-repeat 50% 50%;
+  display: table;
+  position: absolute;
+  background-size: cover;
+}
+
+.career-page .lg-content {
+  background-color: #000;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: 75%;
+  margin: auto;
+}
+
+.degree-content {
+  color: white;
+}
+.career-content {
+  color: white;
+}
