@@ -99,7 +99,7 @@ img {
   height: auto;
 }
 
-spam {
+span {
   text-transform: lowercase;
   font-weight: 800;
 }
@@ -142,35 +142,61 @@ spam {
 .career-page {
     height: 100%;
     width: 100%;
-    top: 0;
-    margin: auto;
     display: flex;
-    flex-direction: row;
 }
 
 .sml-content {
   width: 25%;
-  height: 100%;
-  margin: auto;
-  top: 0;
-  background: url(career-page-bg.jpg) no-repeat 50% 50%;
-  display: table;
-  position: absolute;
+  max-height: none;
+  background: url(career-page-bg.jpg);
   background-size: cover;
 }
 
 .lg-content {
+  display: flex;
+  max-height: none;
   background-color: #000;
-  height: 100%;
-  position: absolute;
-  right: 0;
   width: 75%;
-  margin: auto;
+  padding: 15px 30px;
+  justify-content: space-around;
 }
 
-.degree-content {
+.professional {
   color: white;
+  width: 45%;
+  text-align: justify;
+
 }
-.career-content {
+.professional h3, .academic h3 {
+  margin: 40px 0 0 0;
+  text-transform: uppercase;
+  padding: 0px 0;
+}
+.professional h1, .academic h1 {
+  font-weight: 550;
+  text-transform: uppercase;
+  color: #1794ac;
+  border-bottom: 1px solid #74828f;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.lg-content span {
+  font-style: italic;
+  font-weight: 200;
+  color: #1687a7;
+  text-transform: capitalize;
+  font-size: 90%;
+}
+
+.academic {
   color: white;
+  width: 45%;
+  text-align: justify;
+}
+
+.home-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
 }
