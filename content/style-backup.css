@@ -1,0 +1,195 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#b1 {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: url(bg.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  display: flex;
+}
+
+#s1 {
+  background: url(career-bg.jpg) no-repeat 50% 50%;
+}
+#s2 {
+  background: url(hobbie-bg.jpg) no-repeat 50% 50%;
+}
+#s3 {
+  background: url(social-bg.jpg) no-repeat 50% 50%;
+}
+
+#s1, #s2, #s3 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  margin: auto;
+  display: flex;
+}
+
+#b1 .in1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: none;
+}
+
+#s1 .div-sec , #s2 .div-sec , #s3 .div-sec {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content {
+  color: white;
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  font-weight: 400;
+}
+
+.content h1 {
+  font-size: 320%;
+}
+
+.content p {
+  font-size: 150%;
+  margin: 70px 0 60px 0;
+  text-shadow: 2px 2px #000;
+}
+
+.content li {
+  display: inline-flex;
+  padding: 7px 18px;
+  border: 3px solid white;
+  border-radius: 17px;
+  margin: 0 20px;
+  transition: 0.15s;
+}
+
+.content li:hover {
+  font-size: 120%;
+  position: static;
+}
+
+.content a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 120%;
+  color: #f9f3f4;
+  text-shadow: 2px 2px #000;
+  font-weight: 600;
+}
+
+span {
+  text-transform: lowercase;
+  font-weight: 800;
+}
+
+.div-sec {
+  display: flex;
+  color: white;
+  text-align: right;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.div-sec .main-btn, .div-sec .sec-btn, .academic .sec-btn {
+  text-shadow: 3px 3px #000;
+  box-shadow: 3px 3px #000;
+  text-transform: uppercase;
+  border-radius: 7px;
+  color: #f9f3f4;
+  text-decoration: none;
+  border: 4px solid;
+  font-size: 140%;
+  padding: 7px 13px;
+  font-weight: 700;
+  float: right;
+  clear: both;
+}
+
+.div-sec .main-btn {
+  font-size: 300%;
+}
+
+.section2 {
+  float: right;
+  width: 35%;
+  font-size: 120%;
+  clear:both;
+  padding: 20px 0 12% 0;
+  text-shadow: 2px 1px #000;
+}
+
+.career-page {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.sml-content {
+  width: 25%;
+  max-height: none;
+  background: url(career-page-bg.jpg);
+  background-size: cover;
+}
+
+.lg-content {
+  display: flex;
+  max-height: none;
+  background-color: #000;
+  width: 75%;
+  padding: 15px 30px;
+  justify-content: space-around;
+}
+
+.professional {
+  color: white;
+  width: 45%;
+  text-align: justify;
+}
+
+.professional h3, .academic h3 {
+  margin: 40px 0 0 0;
+  text-transform: uppercase;
+  padding: 0px 0;
+}
+
+.professional h1, .academic h1 {
+  font-weight: 550;
+  text-transform: uppercase;
+  color: #1794ac;
+  border-bottom: 1px solid #74828f;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.lg-content span {
+  font-style: italic;
+  font-weight: 200;
+  color: #1687a7;
+  text-transform: capitalize;
+  font-size: 90%;
+}
+
+.academic {
+  color: white;
+  width: 45%;
+  text-align: justify;
+}
+
+.academic .sec-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 110%;
+}
