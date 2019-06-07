@@ -9,10 +9,11 @@ html, body {
 #b1 {
   width: 100%;
   height: 100%;
-  margin: auto;
-  background: url(bg.jpg) no-repeat 50% 50%;
+  background: url(bg.jpg);
   background-size: cover;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #s1 {
@@ -33,13 +34,6 @@ html, body {
   display: flex;
 }
 
-#b1 .in1 {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: none;
-}
-
 #s1 .div-sec , #s2 .div-sec , #s3 .div-sec {
   display: flex;
   justify-content: center;
@@ -52,12 +46,16 @@ html, body {
   color: white;
   text-align: center;
   max-width: 600px;
-  margin: auto;
   font-weight: 400;
 }
 
 .content h1 {
   font-size: 320%;
+}
+
+span {
+  text-transform: lowercase;
+  font-weight: 800;
 }
 
 .content p {
@@ -66,18 +64,17 @@ html, body {
   text-shadow: 2px 2px #000;
 }
 
+.content ul {
+  padding: 0;
+}
+
 .content li {
-  display: inline-flex;
+  display: inline-block;
   padding: 7px 18px;
   border: 3px solid white;
   border-radius: 17px;
   margin: 0 20px;
   transition: 0.15s;
-}
-
-.content li:hover {
-  font-size: 120%;
-  position: static;
 }
 
 .content a {
@@ -89,9 +86,18 @@ html, body {
   font-weight: 600;
 }
 
-span {
-  text-transform: lowercase;
-  font-weight: 800;
+.content li:hover {
+  font-size: 130%;
+  text-decoration: none;
+  background-color: #05445c;
+  color: #000;
+  text-shadow: 2px 2px solid black;
+  border: 3px solid #3b9a9c;
+}
+
+.content a:hover{
+  color: white;
+  text-decoration: none;
 }
 
 .div-sec {
