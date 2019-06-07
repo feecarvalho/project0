@@ -11,9 +11,8 @@ html, body {
   height: 100%;
   margin: auto;
   background: url(bg.jpg) no-repeat 50% 50%;
-  top: 0;
-  display: table;
   background-size: cover;
+  display: flex;
 }
 
 #s1 {
@@ -29,54 +28,56 @@ html, body {
 #s1, #s2, #s3 {
   width: 100%;
   height: 100%;
-  margin: auto;
-  top: 0;
-  display: table;
   background-size: cover;
+  margin: auto;
+  display: flex;
 }
 
 #b1 .in1 {
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
   width: 100%;
   max-width: none;
 }
 
 #s1 .div-sec , #s2 .div-sec , #s3 .div-sec {
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
   width: 100%;
-  max-width: none;
 }
 
 .content {
   color: white;
   text-align: center;
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
+  font-weight: 400;
 }
 
 .content h1 {
-  font-size: 350%;
+  font-size: 320%;
 }
 
 .content p {
   font-size: 150%;
-  margin: 50px 0;
+  margin: 70px 0 60px 0;
   text-shadow: 2px 2px #000;
-  font-weight: bold;
-}
-
-.content ul {
-  padding: 0;
 }
 
 .content li {
   display: inline-flex;
-  padding: 5px 18px;
-  border: 2px solid white;
-  border-radius: 5px;
+  padding: 7px 18px;
+  border: 3px solid white;
+  border-radius: 17px;
   margin: 0 20px;
+  transition: 0.15s;
+}
+
+.content li:hover {
+  font-size: 120%;
+  position: static;
 }
 
 .content a {
@@ -88,39 +89,28 @@ html, body {
   font-weight: 600;
 }
 
-.content a:hover {
-  background-color: white
-  color: #000;
-  font-weight: 900;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 span {
   text-transform: lowercase;
   font-weight: 800;
 }
 
 .div-sec {
+  display: flex;
   color: white;
   text-align: right;
   margin: auto;
   padding: 0 40px;
 }
 
-.div-sec .main-btn, .div-sec .sec-btn {
+.div-sec .main-btn, .div-sec .sec-btn, .academic .sec-btn {
   text-shadow: 3px 3px #000;
   box-shadow: 3px 3px #000;
   text-transform: uppercase;
   border-radius: 7px;
   color: #f9f3f4;
   text-decoration: none;
-  font-family: 'Centaury Ghotic', sans-serif;
   border: 4px solid;
-  font-size: 150%;
+  font-size: 140%;
   padding: 7px 13px;
   font-weight: 700;
   float: right;
@@ -133,14 +123,15 @@ span {
 
 .section2 {
   float: right;
-  width: 30%;
-  font-size: 125%;
+  width: 35%;
+  font-size: 120%;
   clear:both;
-  padding: 25px 0 12% 0;
+  padding: 20px 0 12% 0;
+  text-shadow: 2px 1px #000;
 }
 
 .career-page {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     display: flex;
 }
@@ -165,13 +156,14 @@ span {
   color: white;
   width: 45%;
   text-align: justify;
-
 }
+
 .professional h3, .academic h3 {
   margin: 40px 0 0 0;
   text-transform: uppercase;
   padding: 0px 0;
 }
+
 .professional h1, .academic h1 {
   font-weight: 550;
   text-transform: uppercase;
@@ -195,8 +187,13 @@ span {
   text-align: justify;
 }
 
-.home-btn {
+.academic .sec-btn, .academic a {
   display: flex;
   justify-content: flex-end;
-  align-content: flex-end;
+  align-items: flex-end;
+  font-size: 110%;
+  text-decoration: none;
+  color: #f9f3f4;
+  text-shadow: 2px 2px #000;
+  font-weight: 600;
 }
