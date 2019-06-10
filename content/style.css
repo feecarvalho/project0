@@ -230,18 +230,22 @@ span {
 }
 
 .grid {
+  text-align: center;
   height: auto;
   width: 100%;
   display: grid;
   padding: 0px;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
 }
 
+
 .grid-item {
+  margin: 0 10px;
   font-size: 20px;
-  padding-topr: 10px;
+  padding-top: 10px;
   text-align: center;
 }
+
 
 .stars {
   font-size: 150%;
