@@ -14,6 +14,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 450px;
 }
 
 #s1 {
@@ -32,6 +33,7 @@ html, body {
   background-size: cover;
   margin: auto;
   display: flex;
+  min-width: 450px;
 }
 
 #s1 .div-sec , #s2 .div-sec , #s3 .div-sec {
@@ -60,7 +62,7 @@ span {
 
 .content p {
   font-size: 150%;
-  margin: 70px 0 60px 0;
+  margin: 40px 0 20px 0;
   text-shadow: 2px 2px #000;
 }
 
@@ -140,9 +142,10 @@ span {
 
 .section-page {
   min-height: 100%;
-  width: 100%;
+  min-width: 600px;
   display: flex;
 }
+
 .section-page h1 {
   font-size: 24px;
   font-weight: 700;
@@ -151,12 +154,6 @@ span {
 .section-page h3 {
   font-size: 20px;
   font-weight: 700;
-}
-
-.career-bg {
-  background: url(career-page-bg.jpg);
-  max-height: none;
-  background-size: cover;
 }
 
 .c-sml-content {
@@ -177,22 +174,30 @@ span {
 
 .lg-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
   max-height: none;
   background-color: #000;
-  width: 100%;
+  padding: 1em;
 }
 
 .professional {
   color: white;
-  width: 45%;
+  width: 50%;
   text-align: justify;
   padding: 10px 20px;
 }
 
+.academic {
+  color: white;
+  width: 50%;
+  padding: 10px 20px;
+  text-align: justify;
+}
+
 .professional h3, .academic h3 {
-  margin: 40px 0 0 0;
+  margin: 30px 0 0 0;
   text-transform: uppercase;
   padding: 0px 0;
 }
@@ -214,19 +219,16 @@ span {
   font-size: 90%;
 }
 
-.academic {
-  color: white;
-  width: 45%;
-  padding: 10px 20px;
-  text-align: justify;
+.academic p, .professional p {
+  margin: 10px 0 0 0;
+  width: 100%;
 }
 
 .lg-content .button-back {
   font-size: 10px;
   align-self: flex-end;
   width: 100%;
-  margin-bottom: 20px;
-  margin-left: 10px;
+  margin: 20px 0 20px 10px;
 }
 
 .grid {
@@ -238,7 +240,6 @@ span {
   grid-template-columns: 50% 50%;
 }
 
-
 .grid-item {
   margin: 0 10px;
   font-size: 20px;
@@ -246,7 +247,16 @@ span {
   text-align: center;
 }
 
-
 .stars {
   font-size: 150%;
+  text-transform: none;
+}
+
+.professional ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  font-size: 1.4em;
+  line-height: 150%;
+  margin-top: 10px;
 }
