@@ -14,7 +14,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 650px;
+  min-width: 40%;
 }
 
 #s1 {
@@ -33,7 +33,12 @@ html, body {
   background-size: cover;
   margin: auto;
   display: flex;
-  min-width: 650px;
+  min-width: 40%;
+}
+@media (max-width: 468px) {
+  #s1, #s2, #s3, #b1 {
+    height: 100vh;
+  }
 }
 
 #s1 .div-sec , #s2 .div-sec , #s3 .div-sec {
@@ -75,7 +80,7 @@ span {
   padding: 7px 13px;
   border: 3px solid white;
   border-radius: 7px;
-  margin: 0 20px;
+  margin: 8px 18px;
   transition: 0.4s;
 }
 
