@@ -14,7 +14,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 450px;
+  min-width: 650px;
 }
 
 #s1 {
@@ -33,7 +33,7 @@ html, body {
   background-size: cover;
   margin: auto;
   display: flex;
-  min-width: 450px;
+  min-width: 650px;
 }
 
 #s1 .div-sec , #s2 .div-sec , #s3 .div-sec {
@@ -47,12 +47,12 @@ html, body {
 .content {
   color: white;
   text-align: center;
-  max-width: 700px;
+  max-width: 650px;
   font-weight: 400;
 }
 
 .content h1 {
-  font-size: 320%;
+  font-size: 350%;
 }
 
 span {
@@ -72,7 +72,7 @@ span {
 
 .content li {
   display: inline-block;
-  padding: 7px 18px;
+  padding: 7px 13px;
   border: 3px solid white;
   border-radius: 7px;
   margin: 0 20px;
@@ -124,7 +124,7 @@ span {
 }
 
 .div-sec .main-btn {
-  font-size: 300%;
+  font-size: 250%;
 }
 
 .main-btn:hover, .sec-btn:hover {
@@ -146,6 +146,7 @@ span {
   display: flex;
 }
 
+
 .section-page h1 {
   font-size: 24px;
   font-weight: 700;
@@ -163,6 +164,7 @@ span {
   background: url(skills-page-bg.jpg) no-repeat;
 }
 .n-sml-content {
+
 
 }
 
@@ -194,6 +196,17 @@ span {
   width: 50%;
   padding: 10px 20px;
   text-align: justify;
+}
+@media (max-width: 960px) {
+  .lg-content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .professional, .academic {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
 }
 
 .professional h3, .academic h3 {
