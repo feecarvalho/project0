@@ -36,11 +36,6 @@ html, body {
   min-width: 40%;
 }
 
-@media (max-width: 468px) {
-  #s1, #s2, #s3, #b1 {
-    height: 100vh;
-  }
-}
 
 #s1 .div-sec , #s2 .div-sec , #s3 .div-sec {
   display: flex;
@@ -105,6 +100,23 @@ span {
 .content a:hover{
   color: white;
   text-decoration: none;
+}
+
+
+@media (max-width: 468px) {
+  #s1, #s2, #s3, #b1 {
+    height: 100vh;
+  }
+  .content {
+    transform: scale(0.9);
+    padding: 20px;
+  }
+  .in1 h1 {
+    transform: scale(0.9);
+  }
+  .content p {
+    margin: 25px;
+  }
 }
 
 .div-sec {
@@ -289,7 +301,7 @@ span {
 }
 
 .box {
-  font-family: 'Century Gothic', sans-serif;
+  font-family: 'Ceheightntury Gothic', sans-serif;
   width: 450px;
   background: rgba(0, 0, 0, 0.7);
   padding: 40px;
