@@ -153,11 +153,12 @@ span {
 }
 
 .section2 {
-  width: 45%;
+  width: 65%;
+  font-weight: 900;
   font-size: 1.5em;
   clear:both;
   padding: 20px 0 12% 0;
-  text-shadow: 2px 1px #000;
+  text-shadow: 2px 2px 4px #000;
 }
 
 .section-page {
@@ -244,7 +245,7 @@ span {
 
 .lg-content span {
   font-style: italic;
-  font-weight: 200;
+  font-weight: 900;
   color: #1687a7;
   text-transform: capitalize;
   font-size: 1.05em;
@@ -290,9 +291,10 @@ span {
   text-align: center;
 }
 
-.lg-content .grid-item span{
-  font-size: 150%;
-  text-transform: none;
+.grid-item span{
+  font-size: 1.6em;
+  font-style: normal;
+  text-shadow: 1px 1px 0 #f1f1f1;
 }
 
 .professional ul {
