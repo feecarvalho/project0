@@ -46,6 +46,8 @@ html, body {
 }
 
 .content {
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
   color: white;
   text-align: center;
   max-width: 650px;
@@ -63,7 +65,7 @@ span {
 
 .content p {
   font-size: 150%;
-  margin: 40px 0 20px 0;
+  margin: 40px 0 40px 0;
   text-shadow: 2px 2px #000;
 }
 
@@ -102,7 +104,6 @@ span {
   text-decoration: none;
 }
 
-
 @media (max-width: 468px) {
   #s1, #s2, #s3, #b1 {
     height: 100vh;
@@ -115,7 +116,7 @@ span {
     transform: scale(0.9);
   }
   .content p {
-    margin: 25px;
+    margin: 20px 0;
   }
 }
 
@@ -131,7 +132,8 @@ span {
   text-shadow: 3px 3px #000;
   box-shadow: 3px 3px #000;
   text-transform: uppercase;
-  border-radius: 7px;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.5);
   color: #f9f3f4;
   text-decoration: none;
   border: 4px solid;
@@ -276,7 +278,7 @@ span {
   text-align: center;
 }
 
-.stars span{
+.lg-content .grid-item span{
   font-size: 150%;
   text-transform: none;
 }
